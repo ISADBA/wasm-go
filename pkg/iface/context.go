@@ -115,4 +115,8 @@ type HttpContext interface {
 	// Check if the response body is binary content.
 	// This method uses cached header values from the header phase and can be called at any time.
 	IsBinaryResponseBody() bool
+	// Extract consumer information from request
+	ExtractConsumer() string
+	// Store consumer information for plugin execution
+	StoreConsumerInfo(consumerName string)
 }

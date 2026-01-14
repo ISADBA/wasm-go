@@ -310,6 +310,7 @@ func TestParseRuleConfig(t *testing.T) {
 						routes:       map[string]struct{}{},
 						services:     map[string]struct{}{},
 						routePrefixs: map[string]struct{}{},
+						consumers:    map[string]struct{}{},
 						config: customConfig{
 							name: "john",
 							age:  18,
@@ -323,6 +324,7 @@ func TestParseRuleConfig(t *testing.T) {
 						},
 						services:     map[string]struct{}{},
 						routePrefixs: map[string]struct{}{},
+						consumers:    map[string]struct{}{},
 						config: customConfig{
 							name: "ann",
 							age:  16,
@@ -336,6 +338,7 @@ func TestParseRuleConfig(t *testing.T) {
 							"test2.static:8080": {},
 						},
 						routePrefixs: map[string]struct{}{},
+						consumers:    map[string]struct{}{},
 						config: customConfig{
 							name: "ann",
 							age:  16,
@@ -349,6 +352,7 @@ func TestParseRuleConfig(t *testing.T) {
 							"api1": {},
 							"api2": {},
 						},
+						consumers: map[string]struct{}{},
 						config: customConfig{
 							name: "ann",
 							age:  16,
@@ -365,7 +369,7 @@ func TestParseRuleConfig(t *testing.T) {
 		{
 			name:   "invalid rule",
 			config: `{"_rules_":[{"age":16}]}`,
-			errMsg: "there is at least one of  '_match_route_', '_match_domain_', '_match_service_' and '_match_route_prefix_' can present in configuration.",
+			errMsg: "there is at least one of  '_match_route_', '_match_domain_', '_match_service_', '_match_route_prefix_' and '_match_consumer_' can present in configuration.",
 		},
 	}
 	for _, c := range cases {
@@ -442,6 +446,7 @@ func TestParseOverrideConfig(t *testing.T) {
 						},
 						services:     map[string]struct{}{},
 						routePrefixs: map[string]struct{}{},
+						consumers:    map[string]struct{}{},
 						config: completeConfig{
 							consumers: []string{"c1", "c2", "c3"},
 							allow:     []string{"c1", "c3"},

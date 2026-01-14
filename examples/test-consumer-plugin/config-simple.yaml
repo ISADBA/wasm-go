@@ -1,0 +1,12 @@
+apiVersion: extensions.higress.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: test-consumer-plugin-simple
+  namespace: higress-system
+spec:
+  phase: AUTHN
+  priority: 800
+  url: oci://your-registry/test-consumer-plugin:v1.0.0
+  # 简单配置 - 仅全局配置，用于测试向后兼容性
+  config:
+    message: "Simple global configuration - no consumer rules"

@@ -1,0 +1,38 @@
+apiVersion: extensions.higress.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: test-consumer-plugin
+  namespace: higress-system
+spec:
+  phase: AUTHN
+  priority: 800
+  url: oci://your-registry/test-consumer-plugin:v1.0.0
+  matchRules:
+  # Consumer 规则 - 最高优先级
+  - _match_consumer_:
+    - "premium-user"
+    - "enterprise-user"
+    config:
+      message: "Welcome premium/enterprise user! You have special access."
+  
+  - _match_consumer_:
+    - "basic-user"
+    config:
+      message: "Welcome basic user! You have standard access."
+  
+  # Route 规则 - 次优先级
+  - _match_route_:
+    - "api-route"
+    - "web-route"
+    config:
+      message: "Welcome to API/Web route!"
+  
+  # Domain 规则
+  - _match_domain_:
+    - "*.example.com"
+    config:
+      message: "Welcome to example.com domain!"
+  
+  # 全局配置 - 最低优先级（回退）
+  config:
+    message: "Welcome guest! This is the default message."

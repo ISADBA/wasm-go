@@ -1,6 +1,33 @@
 ## Intro
 
+**This is a fork of the Higress WASM Go SDK with Consumer-level scope support.**
+
 This SDK is used to develop the WASM Plugins for Higress in Go.
+
+### What's New in This Fork
+
+- ✅ **Consumer-level scope support**: Configure plugins at the consumer level with highest priority
+- ✅ **Module path**: `github.com/ISADBA/wasm-go` (forked from `github.com/higress-group/wasm-go`)
+- ✅ **Version**: `v1.0.0-consumer-support`
+- ✅ **Backward compatible**: All existing features work as before
+
+### Key Features
+
+- **Consumer Scope**: Match rules based on consumer identity (from auth plugins)
+- **Priority Matching**: Consumer > Route > Service > Domain > Global
+- **Easy Migration**: Simple import path update, see [MIGRATION.md](MIGRATION.md)
+
+### Quick Start
+
+```bash
+# Add dependency
+go get github.com/ISADBA/wasm-go@v1.0.0-consumer-support
+
+# Update imports in your code
+import "github.com/ISADBA/wasm-go/pkg/wrapper"
+```
+
+See [MIGRATION.md](MIGRATION.md) for detailed migration guide and [examples/test-consumer-plugin](examples/test-consumer-plugin) for a complete example.
 
 ## Build on local yourself
 
