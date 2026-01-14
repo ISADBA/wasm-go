@@ -1299,7 +1299,7 @@ func (ctx *CommonHttpCtx[PluginConfig]) ExtractConsumer() string {
 	}
 
 	// 5. Try to extract from Authorization header (JWT or Basic Auth)
-	if authHeader, err := proxywasm.GetHttpRequestHeader("Authorization"); err == nil && authHeader != "" {
+	if authHeader, err := proxywasm.GetHttpRequestHeader("authorization"); err == nil && authHeader != "" {
 		if consumer := ctx.extractConsumerFromAuth(authHeader); consumer != "" {
 			ctx.plugin.vm.log.Debugf("Consumer extracted from Authorization header: %s", consumer)
 			return consumer
