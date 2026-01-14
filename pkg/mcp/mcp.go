@@ -1,8 +1,8 @@
 package mcp
 
 import (
-	"github.com/higress-group/wasm-go/pkg/mcp/filter"
-	"github.com/higress-group/wasm-go/pkg/mcp/server"
+	"github.com/ISADBA/wasm-go/pkg/mcp/filter"
+	"github.com/ISADBA/wasm-go/pkg/mcp/server"
 )
 
 var _ server.Server = &MCPServer{}

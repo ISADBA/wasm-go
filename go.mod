@@ -1,4 +1,4 @@
-module github.com/higress-group/wasm-go
+module github.com/ISADBA/wasm-go
 
 go 1.24.1
 

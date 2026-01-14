@@ -19,7 +19,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/higress-group/wasm-go/pkg/wrapper"
+	"github.com/ISADBA/wasm-go/pkg/wrapper"
 )
 
 func OnMCPResponseSuccess(ctx wrapper.HttpContext, result map[string]any, debugInfo string) {

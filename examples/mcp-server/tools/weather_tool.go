@@ -23,8 +23,8 @@ import (
 
 	"mcp-server/config"
 
-	"github.com/higress-group/wasm-go/pkg/mcp/server"
-	"github.com/higress-group/wasm-go/pkg/mcp/utils"
+	"github.com/ISADBA/wasm-go/pkg/mcp/server"
+	"github.com/ISADBA/wasm-go/pkg/mcp/utils"
 	"github.com/tidwall/gjson"
 )
 

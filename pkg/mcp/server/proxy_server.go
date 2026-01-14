@@ -19,8 +19,8 @@ import (
 	"fmt"
 
 	"github.com/higress-group/proxy-wasm-go-sdk/proxywasm"
-	"github.com/higress-group/wasm-go/pkg/log"
-	"github.com/higress-group/wasm-go/pkg/wrapper"
+	"github.com/ISADBA/wasm-go/pkg/log"
+	"github.com/ISADBA/wasm-go/pkg/wrapper"
 )
 
 // McpProxyConfig represents the configuration for MCP proxy server

@@ -22,8 +22,8 @@ import (
 	"github.com/tidwall/gjson"
 	"gopkg.in/yaml.v3"
 
-	"github.com/higress-group/wasm-go/pkg/log"
-	"github.com/higress-group/wasm-go/pkg/mcp/server"
+	"github.com/ISADBA/wasm-go/pkg/log"
+	"github.com/ISADBA/wasm-go/pkg/mcp/server"
 )
 
 // validatorLogger is a simple logger implementation for validation mode

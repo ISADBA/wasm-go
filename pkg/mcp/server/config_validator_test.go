@@ -19,7 +19,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/higress-group/wasm-go/pkg/log"
+	"github.com/ISADBA/wasm-go/pkg/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/tidwall/gjson"
 )

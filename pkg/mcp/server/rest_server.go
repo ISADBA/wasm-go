@@ -26,9 +26,9 @@ import (
 	"github.com/higress-group/proxy-wasm-go-sdk/proxywasm"
 	"github.com/tidwall/sjson"
 
-	"github.com/higress-group/wasm-go/pkg/log"
-	"github.com/higress-group/wasm-go/pkg/mcp/utils"
-	"github.com/higress-group/wasm-go/pkg/wrapper"
+	"github.com/ISADBA/wasm-go/pkg/log"
+	"github.com/ISADBA/wasm-go/pkg/mcp/utils"
+	"github.com/ISADBA/wasm-go/pkg/wrapper"
 )
 
 // RestMCPConfig represents the configuration for REST MCP server

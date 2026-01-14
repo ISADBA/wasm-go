@@ -24,10 +24,10 @@ import (
 	"github.com/tidwall/sjson"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/higress-group/wasm-go/pkg/iface"
-	"github.com/higress-group/wasm-go/pkg/log"
-	pb "github.com/higress-group/wasm-go/pkg/protos"
-	"github.com/higress-group/wasm-go/pkg/wrapper"
+	"github.com/ISADBA/wasm-go/pkg/iface"
+	"github.com/ISADBA/wasm-go/pkg/log"
+	pb "github.com/ISADBA/wasm-go/pkg/protos"
+	"github.com/ISADBA/wasm-go/pkg/wrapper"
 )
 
 const (

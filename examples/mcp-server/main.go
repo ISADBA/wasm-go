@@ -17,7 +17,7 @@ package main
 import (
 	"mcp-server/tools"
 
-	"github.com/higress-group/wasm-go/pkg/mcp"
+	"github.com/ISADBA/wasm-go/pkg/mcp"
 )
 
 func main() {}

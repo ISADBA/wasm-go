@@ -24,8 +24,8 @@ import (
 	"github.com/higress-group/proxy-wasm-go-sdk/proxywasm/types"
 	"github.com/tidwall/gjson"
 
-	"github.com/higress-group/wasm-go/pkg/iface"
-	"github.com/higress-group/wasm-go/pkg/log"
+	"github.com/ISADBA/wasm-go/pkg/iface"
+	"github.com/ISADBA/wasm-go/pkg/log"
 )
 
 type Category int

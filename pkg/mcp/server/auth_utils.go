@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/higress-group/proxy-wasm-go-sdk/proxywasm"
-	"github.com/higress-group/wasm-go/pkg/log"
+	"github.com/ISADBA/wasm-go/pkg/log"
 )
 
 // setOrReplaceHeader sets or replaces a header in the headers slice.
